@@ -4,144 +4,197 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CV - Kamil Miklaszewski</title>
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
-<div class="cv-wrapper">
+<div class="cv-page">
 
   <!-- LEWA KOLUMNA -->
-  <aside class="sidebar">
-    <div class="avatar">
-      <img src="https://via.placeholder.com/120" alt="Zdjecie">
+  <aside class="left-col">
+
+    <div class="photo-wrap">
+      <img src="https://via.placeholder.com/150" alt="Zdjecie" class="photo">
     </div>
-    <div class="sidebar-section">
-      <h3>Kontakt</h3>
-      <p>📞 +48 000 000 000</p>
-      <p>✉️ email@example.com</p>
-      <p>📍 Legnica, Polska</p>
-      <p>🔗 <a href="https://kmiklaszewski1.github.io" target="_blank">Portfolio</a></p>
-      <p>🐙 <a href="https://github.com/kmiklaszewski1" target="_blank">GitHub</a></p>
-    </div>
-    <div class="sidebar-section">
-      <h3>Umiejętności</h3>
-      <ul>
-        <li>C# / Unity</li>
-        <li>HTML / CSS / JS</li>
-        <li>Unreal Engine 5</li>
-        <li>Git / GitHub</li>
-        <li>Visual Studio Code</li>
-        <li>Scrum / Agile</li>
+
+    <div class="left-section">
+      <div class="left-section-title">
+        <span class="icon">&#128100;</span> Kontakt
+      </div>
+      <ul class="left-list">
+        <li><span class="icon-small">&#128222;</span> +48 000 000 000</li>
+        <li><span class="icon-small">&#9993;</span> email@example.com</li>
+        <li><span class="icon-small">&#128205;</span> Legnica, Polska</li>
       </ul>
     </div>
-    <div class="sidebar-section">
-      <h3>Języki</h3>
-      <ul>
-        <li>Polski – native</li>
-        <li>Angielski – B2</li>
+
+    <div class="left-section">
+      <div class="left-section-title">
+        <span class="icon">&#127891;</span> Edukacja
+      </div>
+      <ul class="left-list">
+        <li>
+          <strong>CDV Poznan</strong><br>
+          Informatyka &ndash; Game Development<br>
+          <span class="blue">2022 &ndash; obecnie</span>
+        </li>
+        <li>
+          Zarz&acirc;dzanie Projektami IT<br>
+          <span class="blue">2024 &ndash; 2025</span>
+        </li>
       </ul>
     </div>
-    <div class="sidebar-section">
-      <h3>Zainteresowania</h3>
-      <ul>
-        <li>Game Development</li>
-        <li>Web Development</li>
-        <li>Competitive Gaming</li>
-        <li>Game Design</li>
+
+    <div class="left-section">
+      <div class="left-section-title">
+        <span class="icon">&#11088;</span> Mocne strony
+      </div>
+      <ul class="left-list dot-list">
+        <li>Programowanie w C# i Unity</li>
+        <li>Tworzenie gier multiplayer</li>
+        <li>Web Development (HTML/CSS/JS)</li>
+        <li>Zarz&#261;dzanie projektami (Scrum)</li>
+        <li>Szybka adaptacja do nowych technologii</li>
+        <li>Praca w zespole i komunikatywno&#347;&#263;</li>
+        <li>Kreatywno&#347;&#263; i problem solving</li>
+        <li>Odpowiedzialno&#347;&#263; i terminowo&#347;&#263;</li>
       </ul>
     </div>
+
+    <div class="left-section">
+      <div class="left-section-title">
+        <span class="icon">&#127760;</span> J&#281;zyki
+      </div>
+      <ul class="left-list">
+        <li>Polski &ndash; Ojczysty <span class="blue">C2</span></li>
+        <li>Angielski &ndash; Komunikatywny <span class="blue">B2</span></li>
+      </ul>
+    </div>
+
   </aside>
 
   <!-- PRAWA KOLUMNA -->
-  <main class="main-content">
-    <header class="cv-header">
-      <div class="header-left">
-        <h1>Kamil Miklaszewski</h1>
-        <p class="subtitle">Junior Game Developer / Web Developer</p>
-      </div>
-      <div class="header-qr">
-        <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://kmiklaszewski1.github.io" alt="QR Portfolio">
-        <p class="qr-label">Portfolio</p>
-      </div>
-    </header>
+  <main class="right-col">
 
-    <section class="cv-section">
-      <h2>O mnie</h2>
-      <p>Student informatyki ze specjalizacją w game development. Posiadam doświadczenie w tworzeniu gier w Unity i Unreal Engine 5 oraz w tworzeniu stron internetowych. Aktywnie rozwijam swoje umiejętności w zarządzaniu projektami IT oraz programowaniu w C#.</p>
-    </section>
+    <!-- NAGLOWEK -->
+    <div class="name-header">
+      <div class="name-block">
+        <h1><span class="name-first">Kamil</span> Miklaszewski</h1>
+        <p class="job-title">Junior Game Developer / Web Developer</p>
+      </div>
+    </div>
 
-    <section class="cv-section">
-      <h2>Doświadczenie</h2>
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">Junior Web Developer – Staż</span>
-          <span class="entry-date">2024 – 2025</span>
-        </div>
-        <p class="entry-company">Firma – Legnica</p>
-        <p>Tworzenie stron internetowych przy użyciu HTML, CSS i JavaScript. Praca z systemem kontroli wersji Git i GitHub.</p>
+    <!-- OPIS + QR -->
+    <div class="intro-row">
+      <div class="intro-text">
+        <p>Student informatyki ze specjalizacj&#261; w game development. Posiadam <strong>praktyczne do&#347;wiadczenie</strong> w tworzeniu gier w Unity i Unreal Engine 5 oraz w tworzeniu stron internetowych. Aktywnie rozwijam swoje umiej&#281;tno&#347;ci w <strong>zarz&#261;dzaniu projektami IT</strong> oraz programowaniu w C#. Poszukuj&#281; mo&#380;liwo&#347;ci gdzie b&#281;d&#281; m&oacute;g&#322; w pe&#322;ni wykorzysta&#263; sw&oacute;j warsztat techniczny i kreatywno&#347;&#263;.</p>
       </div>
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">Game Developer – Praktyki</span>
-          <span class="entry-date">2024 – 2025</span>
-        </div>
-        <p class="entry-company">CDV – Legnica</p>
-        <p>Tworzenie gier w Unity (C#) i Unreal Engine 5. Praca nad mechanikami multiplayer, systemami UI oraz architekturą gier.</p>
+      <div class="qr-block">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://kmiklaszewski1.github.io" alt="QR Portfolio" class="qr-img">
+        <p class="qr-label">PORTFOLIO<br>DO POBRANIA</p>
       </div>
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">Pracownik Ochrony</span>
-          <span class="entry-date">2023 – obecnie</span>
-        </div>
-        <p class="entry-company">Firma ochroniarska – Legnica</p>
-        <p>Praca zmianowa (dzień/noc), odpowiedzialność za bezpieczeństwo obiektu.</p>
-      </div>
-    </section>
+    </div>
 
-    <section class="cv-section">
-      <h2>Edukacja</h2>
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">Informatyka – Game Development</span>
-          <span class="entry-date">2022 – obecnie</span>
-        </div>
-        <p class="entry-company">CDV – Legnica</p>
+    <!-- DOSWIADCZENIE -->
+    <div class="section">
+      <div class="section-title">
+        <span class="icon">&#128188;</span> Do&#347;wiadczenie zawodowe
       </div>
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">Zarządzanie Projektami IT</span>
-          <span class="entry-date">2024 – 2025</span>
-        </div>
-        <p class="entry-company">Kurs – Online</p>
-      </div>
-    </section>
 
-    <section class="cv-section">
-      <h2>Projekty</h2>
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">Game of Spores</span>
-          <span class="entry-date">Unity / C#</span>
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <div class="job-name">Junior Web Developer</div>
+            <div class="job-company">Sta&#380; / Praktyki</div>
+          </div>
+          <div class="job-date">
+            <span class="date-len">1 ROK</span><br>
+            <span class="blue">2024 &ndash; 2025</span>
+          </div>
         </div>
-        <p>Multiplayer card game z systemem tutorialu, mechanikami bitew i zarządzaniem talią kart.</p>
+        <p class="job-desc">Tworzenie stron internetowych przy u&#380;yciu HTML, CSS i JavaScript. Praca z systemem kontroli wersji Git i GitHub. Udzia&#322; w projektach zespo&#322;owych z u&#380;yciem metodologii Agile/Scrum.</p>
       </div>
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">Carrot Heist</span>
-          <span class="entry-date">Unreal Engine 5</span>
-        </div>
-        <p>Czteroosobowa multiplayer gra z konkurencyjnymi mechanikami rozgrywki.</p>
-      </div>
-    </section>
 
-    <section class="cv-section">
-      <h2>Kursy i certyfikaty</h2>
-      <ul class="cert-list">
-        <li>Unity Game Development – Udemy</li>
-        <li>Unreal Engine 5 Multiplayer – Udemy</li>
-        <li>Scrum / Agile – IT Project Management</li>
-        <li>HTML / CSS / JavaScript – freeCodeCamp</li>
-      </ul>
-    </section>
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <div class="job-name">Game Developer</div>
+            <div class="job-company">CDV &ndash; Praktyki</div>
+          </div>
+          <div class="job-date">
+            <span class="date-len">1 ROK</span><br>
+            <span class="blue">2024 &ndash; 2025</span>
+          </div>
+        </div>
+        <p class="job-desc">Tworzenie gier w Unity (C#) i Unreal Engine 5. Praca nad mechanikami multiplayer, systemami UI oraz architektur&#261; gier. Projekt Game of Spores &ndash; multiplayer card game z systemem tutorialu i zarz&#261;dzaniem tali&#261; kart.</p>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <div class="job-name">Pracownik Ochrony</div>
+            <div class="job-company">Firma ochroniarska</div>
+          </div>
+          <div class="job-date">
+            <span class="date-len">3 LATA</span><br>
+            <span class="blue">2023 &ndash; OBECNIE</span>
+          </div>
+        </div>
+        <p class="job-desc">Praca zmianowa (dzie&#324;/noc), odpowiedzialno&#347;&#263; za bezpiecze&#324;stwo obiektu. Rozwijanie umiej&#281;tno&#347;ci organizacyjnych i komunikacyjnych.</p>
+      </div>
+    </div>
+
+    <!-- DOLNA CZESC: Umiejetnosci + Kursy -->
+    <div class="bottom-row">
+
+      <div class="bottom-left">
+        <div class="section-title">
+          <span class="icon">&#9881;</span> Umiej&#281;tno&#347;ci
+        </div>
+        <ul class="skill-list">
+          <li><span class="skill-name">C# / Unity</span> &ndash; <span class="blue">Zaawansowany</span></li>
+          <li><span class="skill-name">HTML / CSS / JS</span> &ndash; <span class="blue">Zaawansowany</span></li>
+          <li><span class="skill-name">Unreal Engine 5</span> &ndash; <span class="blue">&#346;redniozaawansowany</span></li>
+          <li><span class="skill-name">Git / GitHub</span> &ndash; <span class="blue">Dobra znajomo&#347;&#263;</span></li>
+          <li><span class="skill-name">Visual Studio Code</span> &ndash; <span class="blue">Zaawansowany</span></li>
+          <li><span class="skill-name">Scrum / Agile</span> &ndash; <span class="blue">Podstawowy</span></li>
+        </ul>
+      </div>
+
+      <div class="bottom-right">
+        <div class="section-title">
+          <span class="icon">&#127941;</span> Kursy i Szkolenia
+        </div>
+        <ul class="cert-list">
+          <li>
+            <strong>Udemy</strong><br>
+            <span class="blue">Kurs Unity Game Development</span><br>
+            <span class="blue">Kurs Unreal Engine 5 Multiplayer</span>
+          </li>
+          <li>
+            <strong>freeCodeCamp</strong><br>
+            <span class="blue">Certyfikat HTML/CSS/JavaScript</span>
+          </li>
+          <li>
+            <strong>Kurs Online</strong><br>
+            <span class="blue">Certyfikat Scrum / Agile</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- ZAINTERESOWANIA -->
+    <div class="section">
+      <div class="section-title">
+        <span class="icon">&#128218;</span> Zainteresowania
+      </div>
+      <p class="interest-text">W wolnym czasie aktywnie &#347;ledz&#281; <strong>nowe technologie</strong> oraz <strong>trendy w game development i web development</strong>. Rozwijam w&#322;asne projekty gier oraz portfolio stron internetowych. Interesu&#281; si&#281; tak&#380;e <strong>architektur&#261; oprogramowania</strong> i optymalizacj&#261; kodu. Aktywny gracz tytu&#322;&oacute;w kompetytywnych (TFT, FC26).</p>
+    </div>
+
+    <div class="rodo">
+      Wyra&#380;am zgod&#281; na przetwarzanie moich danych osobowych zawartych w niniejszym CV dla potrzeb niezb&#281;dnych do realizacji procesu rekrutacji, zgodnie z art. 6 ust. 1 lit. a Rozporz&#261;dzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. (RODO).
+    </div>
+
   </main>
 
 </div>
