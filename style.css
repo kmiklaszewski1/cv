@@ -78,7 +78,7 @@ body {
   padding: 0 6px;
 }
 
-/* Timeline list: kólka z linia pionowa */
+/* Timeline list: kolka z linia pionowa */
 .left-list.timeline-list {
   position: relative;
   padding-left: 20px;
@@ -138,7 +138,7 @@ body {
   border-radius: 50%;
 }
 
-/* Dot-list z linia pionowa (Mocne strony, Jezyki) */
+/* Dot-list z linia pionowa */
 .left-list.dot-list.line-list {
   position: relative;
 }
@@ -224,6 +224,9 @@ body {
   color: #555;
   margin-top: 3px;
   font-weight: 400;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 10px;
 }
 
 /* Intro row: tekst + QR */
