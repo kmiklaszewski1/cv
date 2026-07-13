@@ -70,6 +70,7 @@ body {
   background: #00BCD4;
   border-radius: 50%;
   font-size: 14px;
+    line-height: 1;
   color: #fff;
 }
 
@@ -186,6 +187,7 @@ body {
   background: #00BCD4;
   border-radius: 50%;
   font-size: 13px;
+    line-height: 1;
   flex-shrink: 0;
 }
 
@@ -308,6 +310,7 @@ body {
   background: #00BCD4;
   border-radius: 50%;
   font-size: 15px;
+    line-height: 1;
   color: #fff;
 }
 
