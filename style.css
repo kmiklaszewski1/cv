@@ -75,7 +75,19 @@ body {
 
 .left-list {
   list-style: none;
-  padding: 0 6px;
+  padding: 0;
+}
+
+.left-list li {
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  padding-left: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 /* Timeline list: kolka z linia pionowa */
@@ -88,6 +100,7 @@ body {
   position: relative;
   padding-left: 16px;
   margin-bottom: 10px;
+  display: block;
 }
 
 .left-list.timeline-list li::before {
@@ -118,39 +131,26 @@ body {
   display: none;
 }
 
-.left-list li {
-  font-size: 12px;
-  color: #333;
-  margin-bottom: 8px;
-  line-height: 1.5;
-  padding-left: 12px;
-  position: relative;
-}
-
 .left-list.dot-list li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 6px;
-  width: 6px;
-  height: 6px;
-  background: #00BCD4;
-  border-radius: 50%;
+  display: none;
 }
 
 /* Dot-list z linia pionowa */
 .left-list.dot-list.line-list {
   position: relative;
+  padding-left: 0;
 }
 
 .left-list.dot-list.line-list li {
   position: relative;
-  padding-left: 16px;
+  padding-left: 18px;
   margin-bottom: 10px;
+  display: block;
 }
 
 .left-list.dot-list.line-list li::before {
   content: '';
+  display: block;
   position: absolute;
   left: 3px;
   top: 5px;
@@ -180,14 +180,13 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 22px;
-  height: 22px;
-  min-width: 22px;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
   background: #00BCD4;
   border-radius: 50%;
-  font-size: 11px;
-  margin-right: 6px;
-  vertical-align: middle;
+  font-size: 13px;
+  flex-shrink: 0;
 }
 
 .blue {
@@ -323,13 +322,6 @@ body {
 
 .job + .job {
   border-top: 1px solid #e0e0e0;
-}
-
-.job-separator {
-  height: 1px;
-  background: #e0e0e0;
-  margin: 0 0 0 14px;
-  border: none;
 }
 
 .job-header {
