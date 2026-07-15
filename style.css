@@ -525,11 +525,11 @@ body {
       border: 2px solid #00BCD4;
     border-radius: 50%;
     color: ##00BCD4;
-    font-size: 20px;
+    font-size: 24px;
     margin-right: 10px;
 }
 
-/* FIX dla ikony globusa w Języki - wyśrodkowanie */
+/* FIX dla ikony24pxglobusa w Języki - wyśrodkowanie */
 .left-section-title .icon {
     display: inline-flex;
       align-items: center;
