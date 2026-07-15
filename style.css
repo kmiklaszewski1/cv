@@ -1,3 +1,4 @@
+524
 * { margin:0; padding:0; box-sizing:border-box; }
 
 body {
@@ -521,10 +522,10 @@ body {
     justify-content: center;
     width: 32px;
     height: 32px;
-    background: ##fff;
+    background: #fff;
       border: 2px solid #00BCD4;
     border-radius: 50%;
-    color: ##00BCD4;
+    color: #00BCD4;
     font-size: 18px;
       line-height: 32px;
     margin-right: 10px;
