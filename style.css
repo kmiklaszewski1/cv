@@ -113,6 +113,7 @@ body {
 .left-list {
   list-style: none;
   padding: 0 0 0 8px;
+  margin: 0;
 }
 .left-list li {
   font-size: 12.5px;
@@ -131,10 +132,8 @@ body {
 .dot-list-dan {
   list-style: none;
   padding: 0;
+  margin: 0;
   position: relative;
-}
-.dot-list-dan::before {
-  content: none;
 }
 .dot-list-dan li {
   position: relative;
@@ -148,7 +147,7 @@ body {
 .dot-list-dan li::before {
   content: '';
   position: absolute;
-  left: 15px;
+  left: 14px;
   top: 50%;
   transform: translateY(-50%);
   width: 10px;
@@ -160,10 +159,8 @@ body {
 .timeline-list {
   list-style: none;
   padding: 0;
+  margin: 0;
   position: relative;
-}
-.timeline-list::before {
-  content: none;
 }
 .timeline-list li {
   position: relative;
@@ -176,7 +173,7 @@ body {
 .timeline-list li::before {
   content: '';
   position: absolute;
-  left: 15px;
+  left: 14px;
   top: 50%;
   transform: translateY(-50%);
   width: 10px;
@@ -192,10 +189,8 @@ body {
 .lang-list {
   position: relative;
   padding: 0;
+  margin: 0;
   list-style: none;
-}
-.lang-list::before {
-  content: none;
 }
 .lang-row {
   display: flex;
@@ -209,7 +204,7 @@ body {
 .lang-row::before {
   content: '';
   position: absolute;
-  left: 15px;
+  left: 14px;
   top: 50%;
   transform: translateY(-50%);
   width: 10px;
@@ -375,6 +370,7 @@ body {
 .skill-list-dan, .cert-list-dan {
   list-style: none;
   padding: 0;
+  margin: 0;
   position: relative;
 }
 .skill-list-dan::before, .cert-list-dan::before {
