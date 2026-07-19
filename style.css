@@ -20,7 +20,7 @@ body {
 .left-col {
   width: 300px;
   min-width: 300px;
-  background: #2d3a4a;
+    background: #fff;
   padding: 40px 20px 30px;
   display: flex;
   flex-direction: column;
@@ -419,6 +419,11 @@ body {
 }
 .lang-badge { margin-left: auto; }
 .lang-level::before { content: "\2013 "; }
+.left-col { border-right: 2px solid #e0e6ed; }
+.left-list li { color: #333; }
+.dot-list-dan li { color: #333; }
+.timeline-list li { color: #333; }
+.lang-name { color: #222; } .lang-level { color: #555; } .section-pill-text { background: #e8edf2; color: #111; }
 @media (max-width: 800px) {
   .cv-page {
     flex-direction: column;
