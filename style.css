@@ -119,10 +119,11 @@ body {
   content: '';
   position: absolute;
   left: 19px;
-  top: 0;
-  bottom: 0;
+  top: 5px;
+  bottom: 5px;
   width: 2px;
-  background: rgba(255,255,255,0.2);
+  background: #5b8aa8;
+  z-index: 0;
 }
 .dot-list-dan li {
   position: relative;
@@ -131,6 +132,7 @@ body {
   color: #cdd6e0;
   font-size: 12.5px;
   line-height: 1.5;
+  z-index: 1;
 }
 .dot-list-dan li::before {
   content: '';
@@ -153,10 +155,11 @@ body {
   content: '';
   position: absolute;
   left: 19px;
-  top: 0;
-  bottom: 0;
+  top: 5px;
+  bottom: 5px;
   width: 2px;
-  background: rgba(255,255,255,0.2);
+  background: #5b8aa8;
+  z-index: 0;
 }
 .timeline-list li {
   position: relative;
@@ -164,6 +167,7 @@ body {
   padding-bottom: 8px;
   color: #cdd6e0;
   font-size: 12.5px;
+  z-index: 1;
 }
 .timeline-list li::before {
   content: '';
@@ -190,10 +194,11 @@ body {
   content: '';
   position: absolute;
   left: 19px;
-  top: 0;
-  bottom: 0;
+  top: 5px;
+  bottom: 5px;
   width: 2px;
-  background: rgba(255,255,255,0.2);
+  background: #5b8aa8;
+  z-index: 0;
 }
 .lang-row {
   display: flex;
@@ -202,6 +207,7 @@ body {
   margin-bottom: 9px;
   padding-left: 36px;
   position: relative;
+  z-index: 1;
 }
 .lang-row::before {
   content: '';
