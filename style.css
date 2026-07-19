@@ -17,7 +17,6 @@ body {
   background: #fff;
   min-height: 100vh;
 }
-/* LEWA KOLUMNA */
 .left-col {
   width: 300px;
   min-width: 300px;
@@ -26,7 +25,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-/* ZDJECIE */
 .photo-wrap {
   display: flex;
   justify-content: center;
@@ -45,7 +43,6 @@ body {
   height: 100%;
   object-fit: cover;
 }
-/* SEKCJA LEWA */
 .left-section {
   margin-bottom: 22px;
 }
@@ -54,12 +51,10 @@ body {
   align-items: center;
   margin-bottom: 14px;
 }
-/* JEZYKI - przyklejone do dolu lewej kolumny */
 #lang-section {
   margin-top: auto;
   margin-bottom: 0;
 }
-/* PILL IKONA - srodek = 20px od lewej krawedzi contentu */
 .section-pill-icon {
   width: 40px;
   height: 40px;
@@ -73,7 +68,6 @@ body {
   flex-shrink: 0;
   z-index: 1;
 }
-/* PILL PASEK - lewa kolumna */
 .section-pill-text {
   background: #3d5166;
   color: #fff;
@@ -86,7 +80,6 @@ body {
   letter-spacing: 0.2px;
   line-height: 1.1;
 }
-/* PILL PASEK - prawa kolumna */
 .section-pill-text-right {
   background: #e8edf2;
   color: #111;
@@ -117,10 +110,6 @@ body {
   text-align: center;
   flex-shrink: 0;
 }
-/* DOT LIST - Mocne Strony, linia przez srodek kulek i ikon */
-/* srodek ikony sekcji = 20px od lewej krawedzi .left-col contentu */
-/* padding .left-col = 20px, wiec srodek ikony = 20px od krawedzi contentu */
-/* linia: left:19px (srodek 2px linii = 20px), kulka: left:14px, width:10px => srodek=19px */
 .dot-list-dan {
   list-style: none;
   padding: 0;
@@ -133,7 +122,7 @@ body {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #607d93;
+  background: rgba(255,255,255,0.2);
 }
 .dot-list-dan li {
   position: relative;
@@ -151,11 +140,10 @@ body {
   transform: translateY(-50%);
   width: 10px;
   height: 10px;
-  background: #7a8fa3;
+  background: #8fafc5;
   border-radius: 50%;
   z-index: 2;
 }
-/* TIMELINE LIST - Edukacja */
 .timeline-list {
   list-style: none;
   padding: 0;
@@ -168,7 +156,7 @@ body {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #607d93;
+  background: rgba(255,255,255,0.2);
 }
 .timeline-list li {
   position: relative;
@@ -193,7 +181,6 @@ body {
   color: #00BCD4;
   font-weight: 700;
 }
-/* LANG LIST - Jezyki */
 .lang-list {
   position: relative;
   padding: 0;
@@ -206,7 +193,7 @@ body {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #607d93;
+  background: rgba(255,255,255,0.2);
 }
 .lang-row {
   display: flex;
@@ -224,7 +211,7 @@ body {
   transform: translateY(-50%);
   width: 10px;
   height: 10px;
-  background: #7a8fa3;
+  background: #8fafc5;
   border-radius: 50%;
   z-index: 2;
 }
@@ -246,7 +233,6 @@ body {
   border-radius: 3px;
   margin-left: 5px;
 }
-/* PRAWA KOLUMNA */
 .right-col {
   flex: 1;
   padding: 40px 40px;
