@@ -321,7 +321,7 @@ body {
 .job-dan::before {
   content: '';
   position: absolute;
-  left: -16px;
+  left: -12px;
   top: 8px;
   width: 10px;
   height: 10px;
