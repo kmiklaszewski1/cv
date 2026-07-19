@@ -1,120 +1,445 @@
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: 'Segoe UI', Arial, sans-serif; background: #e8e8e8; color: #222; font-size: 13px; }
-.cv-page { display: flex; flex-direction: row; max-width: 1000px; margin: 0 auto; background: #fff; min-height: 100vh; }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #e8e8e8;
+  color: #222;
+  font-size: 13px;
+}
+.cv-page {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 100vh;
+}
 /* LEWA KOLUMNA */
-.left-col { width: 300px; min-width: 300px; background: #2d3a4a; padding: 40px 20px 30px; display: flex; flex-direction: column; }
-
+.left-col {
+  width: 300px;
+  min-width: 300px;
+  background: #2d3a4a;
+  padding: 40px 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
 /* ZDJECIE */
-.photo-wrap { display: flex; justify-content: center; margin-bottom: 30px; }
-.photo-container { width: 180px; height: 180px; border-radius: 50%; overflow: hidden; border: 6px solid #00BCD4; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-.photo { width: 100%; height: 100%; object-fit: cover; }
-
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.photo-container {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid #00BCD4;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* SEKCJA LEWA */
-.left-section { margin-bottom: 22px; }
-
-/* section-pill-icon ma width:40px => srodek ikony = 20px od lewej krawedzi contentu */
-.left-section-title { display: flex; align-items: center; margin-bottom: 14px; }
-
+.left-section {
+  margin-bottom: 22px;
+}
+.left-section-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
 /* JEZYKI - przyklejone do dolu lewej kolumny */
-#lang-section { margin-top: auto; margin-bottom: 0; }
-
-/* PILL IKONA - srodek = 20px od lewej (padding 20px + 0 + 20px/2) */
-.section-pill-icon { width: 40px; height: 40px; border-radius: 50%; background: #00BCD4; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0; z-index: 1; }
-
+#lang-section {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+/* PILL IKONA - srodek = 20px od lewej krawedzi contentu */
+.section-pill-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #00BCD4;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  flex-shrink: 0;
+  z-index: 1;
+}
 /* PILL PASEK - lewa kolumna */
-.section-pill-text { background: #3d5166; color: #fff; font-size: 18px; font-weight: 800; padding: 9px 18px 9px 22px; border-radius: 0 20px 20px 0; margin-left: -8px; flex: 1; letter-spacing: 0.2px; line-height: 1.1; }
-
+.section-pill-text {
+  background: #3d5166;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 9px 18px 9px 22px;
+  border-radius: 0 20px 20px 0;
+  margin-left: -8px;
+  flex: 1;
+  letter-spacing: 0.2px;
+  line-height: 1.1;
+}
 /* PILL PASEK - prawa kolumna */
-.section-pill-text-right { background: #e8edf2; color: #111; font-size: 22px; font-weight: 800; padding: 9px 18px 9px 22px; border-radius: 0 20px 20px 0; margin-left: -8px; flex: 1; letter-spacing: 0.1px; line-height: 1.1; }
-
-.left-list { list-style: none; padding: 0 0 0 8px; }
-.left-list li { font-size: 12.5px; color: #cdd6e0; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
-.icon-small { color: #00BCD4; width: 14px; text-align: center; flex-shrink: 0; }
-
-/*
-  LEWA KOLUMNA - linia i kulki:
-  Ikona sekcji: width=40px, srodek=20px od lewej contentu.
-  Lista ma padding-left:0, zaczynamy od lewej contentu.
-  Linia: left=19px (srodek 20px minus 1px polowa linii 2px).
-  Kulka wypelniona 10px: left=15px => srodek=15+5=20px. Tekst: padding-left=30px.
-*/
-
-/* MOCNE STRONY */
-.dot-list-dan { list-style: none; padding: 0; position: relative; }
-.dot-list-dan::before { content: ''; position: absolute; left: 19px; top: 0; bottom: 0; width: 2px; background: #4a5f75; }
-.dot-list-dan li { position: relative; padding-left: 30px; margin-bottom: 11px; color: #cdd6e0; font-size: 12.5px; line-height: 1.5; }
-.dot-list-dan li::before { content: ''; position: absolute; left: 15px; top: 50%; transform: translateY(-50%); width: 10px; height: 10px; background: #7a8fa3; border-radius: 50%; z-index: 2; }
-
-/* TIMELINE EDUKACJA */
-.timeline-list { list-style: none; padding: 0; position: relative; }
-.timeline-list::before { content: ''; position: absolute; left: 19px; top: 0; bottom: 0; width: 2px; background: #4a5f75; }
-.timeline-list li { position: relative; padding-left: 30px; padding-bottom: 8px; color: #cdd6e0; font-size: 12.5px; }
-.timeline-list li::before { content: ''; position: absolute; left: 13px; top: 4px; width: 14px; height: 14px; background: #2d3a4a; border: 2px solid #00BCD4; border-radius: 50%; z-index: 2; }
-
-.blue { color: #00BCD4; font-weight: 700; }
-
-/* JEZYKI */
-.lang-list { position: relative; padding: 0; }
-.lang-list::before { content: ''; position: absolute; left: 19px; top: 0; bottom: 0; width: 2px; background: #4a5f75; }
-.lang-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 9px; padding-left: 30px; position: relative; }
-.lang-row::before { content: ''; position: absolute; left: 15px; top: 50%; transform: translateY(-50%); width: 10px; height: 10px; background: #7a8fa3; border-radius: 50%; z-index: 2; }
-.lang-name { color: #fff; font-weight: 700; font-size: 13px; }
-.lang-level { color: #aaa; font-size: 11px; }
-.lang-badge { background: #00BCD4; color: #fff; font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 3px; margin-left: 5px; }
-
+.section-pill-text-right {
+  background: #e8edf2;
+  color: #111;
+  font-size: 22px;
+  font-weight: 800;
+  padding: 9px 18px 9px 22px;
+  border-radius: 0 20px 20px 0;
+  margin-left: -8px;
+  flex: 1;
+  letter-spacing: 0.1px;
+  line-height: 1.1;
+}
+.left-list {
+  list-style: none;
+  padding: 0 0 0 8px;
+}
+.left-list li {
+  font-size: 12.5px;
+  color: #cdd6e0;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.icon-small {
+  color: #00BCD4;
+  width: 14px;
+  text-align: center;
+  flex-shrink: 0;
+}
+/* DOT LIST - Mocne Strony, linia przez srodek kulek i ikon */
+/* srodek ikony sekcji = 20px od lewej krawedzi .left-col contentu */
+/* padding .left-col = 20px, wiec srodek ikony = 20px od krawedzi contentu */
+/* linia: left:19px (srodek 2px linii = 20px), kulka: left:14px, width:10px => srodek=19px */
+.dot-list-dan {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+.dot-list-dan::before {
+  content: '';
+  position: absolute;
+  left: 19px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #607d93;
+}
+.dot-list-dan li {
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 11px;
+  color: #cdd6e0;
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+.dot-list-dan li::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: #7a8fa3;
+  border-radius: 50%;
+  z-index: 2;
+}
+/* TIMELINE LIST - Edukacja */
+.timeline-list {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+.timeline-list::before {
+  content: '';
+  position: absolute;
+  left: 19px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #607d93;
+}
+.timeline-list li {
+  position: relative;
+  padding-left: 36px;
+  padding-bottom: 8px;
+  color: #cdd6e0;
+  font-size: 12.5px;
+}
+.timeline-list li::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  background: #2d3a4a;
+  border: 2px solid #00BCD4;
+  border-radius: 50%;
+  z-index: 2;
+}
+.blue {
+  color: #00BCD4;
+  font-weight: 700;
+}
+/* LANG LIST - Jezyki */
+.lang-list {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+.lang-list::before {
+  content: '';
+  position: absolute;
+  left: 19px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #607d93;
+}
+.lang-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9px;
+  padding-left: 36px;
+  position: relative;
+}
+.lang-row::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: #7a8fa3;
+  border-radius: 50%;
+  z-index: 2;
+}
+.lang-name {
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+}
+.lang-level {
+  color: #aaa;
+  font-size: 11px;
+}
+.lang-badge {
+  background: #00BCD4;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-left: 5px;
+}
 /* PRAWA KOLUMNA */
-.right-col { flex: 1; padding: 40px 40px; }
-.name-header-dan { margin-bottom: 20px; border-bottom: 4px solid #00BCD4; padding-bottom: 10px; }
-.name-header-dan h1 { font-size: 48px; color: #333; line-height: 1; }
-.name-first-dan { font-weight: 800; color: #00BCD4; }
-.job-title-dan { font-size: 15px; color: #666; font-weight: 600; margin-top: 5px; text-transform: uppercase; letter-spacing: 2px; }
-
-.summary-dan { font-size: 13.5px; color: #444; line-height: 1.6; margin-bottom: 30px; position: relative; padding-right: 120px; }
-.qr-block-dan { position: absolute; right: 0; top: 0; text-align: center; }
-.qr-img-dan { width: 85px; height: 85px; border: 1px solid #eee; padding: 4px; }
-.qr-label-dan { background: #00BCD4; color: #fff; font-size: 9px; font-weight: 700; padding: 3px; border-radius: 2px; margin-top: 4px; display: block; }
-
-.section-dan { margin-bottom: 28px; }
-.section-title-dan { margin-bottom: 18px; display: flex; align-items: center; }
-
-/*
-  DOSWIADCZENIE - prawa kolumna:
-  section-pill-icon width=40px => srodek=20px od lewej.
-  jobs-container zaczyna sie od lewej, linia na left=19px.
-  Kulka 16px otwarta: left=11px => srodek=11+8=19px ~ ok.
-  job-dan padding-left=30px, kulka left=-8px wzgledem job-dan
-  (jobs-container padding-left=27px + job-dan::before left=-8 = 19px od kontener-lewa).
-*/
-.jobs-container { position: relative; padding-left: 27px; }
-.jobs-container::before { content: ''; position: absolute; left: 19px; top: 0; bottom: 0; width: 2px; background: #c5cdd6; }
-.job-dan { margin-bottom: 18px; padding-left: 16px; position: relative; }
-.job-dan::before { content: ''; position: absolute; left: -8px; top: 5px; width: 16px; height: 16px; background: #fff; border: 3px solid #7a8fa3; border-radius: 50%; z-index: 2; }
-
-.job-header-dan { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1px; }
-.job-name-dan { font-size: 16px; font-weight: 700; color: #222; }
-.job-date-dan { color: #00BCD4; font-size: 11px; font-weight: 700; white-space: nowrap; text-align: right; }
-.date-len-dan { color: #999; font-weight: 400; font-size: 11px; display: block; }
-.job-company-dan { color: #666; font-style: italic; font-size: 12.5px; margin-bottom: 6px; }
-.job-desc-dan { font-size: 13px; line-height: 1.5; color: #444; }
-
-/*
-  UMIEJETNOSCI I KURSY:
-  Tak samo - linia left=19px, kulka 10px: left=15px => srodek=20px.
-*/
-.bottom-row-dan { display: flex; gap: 30px; margin-bottom: 28px; }
-.bottom-left-dan, .bottom-right-dan { flex: 1; }
-.skill-list-dan, .cert-list-dan { list-style: none; padding: 0; position: relative; }
-.skill-list-dan::before, .cert-list-dan::before { content: ''; position: absolute; left: 4px; top: 0; bottom: 0; width: 2px; background: #c5cdd6; }
-.skill-list-dan li, .cert-list-dan li { font-size: 13px; margin-bottom: 10px; padding-left: 20px; position: relative; }
-.skill-list-dan li::before, .cert-list-dan li::before { content: ''; position: absolute; left: -1px; top: 50%; transform: translateY(-50%); width: 10px; height: 10px; background: #00BCD4; border-radius: 50%; z-index: 2; }
-.cert-name { font-style: italic; }
-
-.interest-text-dan { font-size: 13.5px; color: #444; line-height: 1.6; }
-.rodo-dan { font-size: 10px; color: #aaa; font-style: italic; margin-top: 40px; border-top: 1px solid #eee; padding-top: 18px; }
-
+.right-col {
+  flex: 1;
+  padding: 40px 40px;
+}
+.name-header-dan {
+  margin-bottom: 20px;
+  border-bottom: 4px solid #00BCD4;
+  padding-bottom: 10px;
+}
+.name-header-dan h1 {
+  font-size: 48px;
+  color: #333;
+  line-height: 1;
+}
+.name-first-dan {
+  font-weight: 800;
+  color: #00BCD4;
+}
+.job-title-dan {
+  font-size: 15px;
+  color: #666;
+  font-weight: 600;
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.summary-dan {
+  font-size: 13.5px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  position: relative;
+  padding-right: 120px;
+}
+.qr-block-dan {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+}
+.qr-img-dan {
+  width: 85px;
+  height: 85px;
+  border: 1px solid #eee;
+  padding: 4px;
+}
+.qr-label-dan {
+  background: #00BCD4;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 3px;
+  border-radius: 2px;
+  margin-top: 4px;
+  display: block;
+}
+.section-dan {
+  margin-bottom: 28px;
+}
+.section-title-dan {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+}
+.jobs-container {
+  position: relative;
+  padding-left: 30px;
+}
+.jobs-container::before {
+  content: '';
+  position: absolute;
+  left: 19px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #c5cdd6;
+}
+.job-dan {
+  margin-bottom: 18px;
+  padding-left: 14px;
+  position: relative;
+}
+.job-dan::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border: 3px solid #7a8fa3;
+  border-radius: 50%;
+  z-index: 2;
+}
+.job-header-dan {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1px;
+}
+.job-name-dan {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+}
+.job-date-dan {
+  color: #00BCD4;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: right;
+}
+.date-len-dan {
+  color: #999;
+  font-weight: 400;
+  font-size: 11px;
+  display: block;
+}
+.job-company-dan {
+  color: #666;
+  font-style: italic;
+  font-size: 12.5px;
+  margin-bottom: 6px;
+}
+.job-desc-dan {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #444;
+}
+.bottom-row-dan {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 28px;
+}
+.bottom-left-dan, .bottom-right-dan {
+  flex: 1;
+}
+.skill-list-dan, .cert-list-dan {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+.skill-list-dan::before, .cert-list-dan::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #c5cdd6;
+}
+.skill-list-dan li, .cert-list-dan li {
+  font-size: 13px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+.skill-list-dan li::before, .cert-list-dan li::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: #00BCD4;
+  border-radius: 50%;
+  z-index: 2;
+}
+.cert-name {
+  font-style: italic;
+}
+.interest-text-dan {
+  font-size: 13.5px;
+  color: #444;
+  line-height: 1.6;
+}
+.rodo-dan {
+  font-size: 10px;
+  color: #aaa;
+  font-style: italic;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  padding-top: 18px;
+}
 @media (max-width: 800px) {
-  .cv-page { flex-direction: column; }
-  .left-col { width: 100%; }
-  .bottom-row-dan { flex-direction: column; }
+  .cv-page {
+    flex-direction: column;
+  }
+  .left-col {
+    width: 100%;
+  }
+  .bottom-row-dan {
+    flex-direction: column;
+  }
 }
