@@ -310,7 +310,7 @@ body {
 .jobs-container::before {
   content: '';
   position: absolute;
-  left: 19px;
+  left: 33px;
   top: 0;
   bottom: 0;
   width: 2px;
@@ -324,7 +324,7 @@ body {
 .job-dan::before {
   content: '';
   position: absolute;
-  left: -16px;
+  left: -30px;
   top: 8px;
   width: 10px;
   height: 10px;
