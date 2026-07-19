@@ -51,7 +51,7 @@ body {
 .left-section::before {
   content: '';
   position: absolute;
-  left: 19px;
+  left: 39px;
   top: 0;
   bottom: -22px;
   width: 2px;
@@ -147,7 +147,7 @@ body {
 .dot-list-dan li::before {
   content: '';
   position: absolute;
-  left: 14px;
+  left: 35px;
   top: 50%;
   transform: translateY(-50%);
   width: 10px;
@@ -173,7 +173,7 @@ body {
 .timeline-list li::before {
   content: '';
   position: absolute;
-  left: 14px;
+  left: 35px;
   top: 50%;
   transform: translateY(-50%);
   width: 10px;
@@ -204,7 +204,7 @@ body {
 .lang-row::before {
   content: '';
   position: absolute;
-  left: 14px;
+  left: 35px;
   top: 50%;
   transform: translateY(-50%);
   width: 10px;
