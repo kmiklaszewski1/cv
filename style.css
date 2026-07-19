@@ -10,7 +10,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #e8e8e8; color: #
 .photo-container { width: 180px; height: 180px; border-radius: 50%; overflow: hidden; border: 6px solid #00BCD4; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
 .photo { width: 100%; height: 100%; object-fit: cover; }
 
-/* SEKCJA LEWA - naglowek jako pill: kolko ikona + zaokraglony pasek z tekstem */
+/* SEKCJA LEWA */
 .left-section { margin-bottom: 22px; }
 
 .left-section-title {
@@ -19,6 +19,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #e8e8e8; color: #
   margin-bottom: 14px;
 }
 
+/* PILL IKONA - wspolna dla lewej i prawej */
 .section-pill-icon {
   width: 36px;
   height: 36px;
@@ -33,10 +34,24 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #e8e8e8; color: #
   z-index: 1;
 }
 
+/* PILL PASEK - lewa kolumna (ciemny) */
 .section-pill-text {
   background: #3d5166;
   color: #fff;
   font-size: 13px;
+  font-weight: 700;
+  padding: 7px 16px 7px 20px;
+  border-radius: 0 20px 20px 0;
+  margin-left: -8px;
+  flex: 1;
+  letter-spacing: 0.3px;
+}
+
+/* PILL PASEK - prawa kolumna (jasny szary) */
+.section-pill-text-right {
+  background: #e8edf2;
+  color: #333;
+  font-size: 14px;
   font-weight: 700;
   padding: 7px 16px 7px 20px;
   border-radius: 0 20px 20px 0;
@@ -50,13 +65,13 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #e8e8e8; color: #
 .icon-small { color: #00BCD4; width: 14px; text-align: center; flex-shrink: 0; }
 
 /* Dot-list */
-.dot-list-dan { padding: 0 0 0 8px; }
-.dot-list-dan li { position: relative; padding-left: 16px; margin-bottom: 9px; color: #cdd6e0; font-size: 12.5px; list-style: none; }
+.dot-list-dan { padding: 0 0 0 8px; list-style: none; }
+.dot-list-dan li { position: relative; padding-left: 16px; margin-bottom: 9px; color: #cdd6e0; font-size: 12.5px; }
 .dot-list-dan li::before { content: ''; position: absolute; left: 0; top: 5px; width: 7px; height: 7px; background: #00BCD4; border-radius: 50%; }
 
 /* Timeline edukacja */
-.timeline-list { padding: 0 0 0 8px; }
-.timeline-list li { position: relative; padding-left: 16px; border-left: 2px solid #4a5f75; margin-left: 5px; padding-bottom: 8px; color: #cdd6e0; font-size: 12.5px; list-style: none; }
+.timeline-list { padding: 0 0 0 8px; list-style: none; }
+.timeline-list li { position: relative; padding-left: 16px; border-left: 2px solid #4a5f75; margin-left: 5px; padding-bottom: 8px; color: #cdd6e0; font-size: 12.5px; }
 .timeline-list li::before { content: ''; position: absolute; left: -5px; top: 4px; width: 8px; height: 8px; background: #2d3a4a; border: 2px solid #00BCD4; border-radius: 50%; }
 
 .blue { color: #00BCD4; font-weight: 700; }
@@ -84,8 +99,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #e8e8e8; color: #
 
 /* Sekcje prawa kolumna */
 .section-dan { margin-bottom: 28px; }
-.section-title-dan { font-size: 17px; font-weight: 800; color: #222; margin-bottom: 18px; display: flex; align-items: center; gap: 12px; }
-.section-icon-dan { width: 36px; height: 36px; background: #00BCD4; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
+.section-title-dan { font-size: 17px; font-weight: 800; color: #222; margin-bottom: 18px; display: flex; align-items: center; }
 
 /* Doswiadczenie */
 .job-dan { margin-bottom: 18px; padding-left: 18px; border-left: 4px solid #00BCD4; position: relative; }
