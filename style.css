@@ -424,6 +424,7 @@ body {
 .dot-list-dan li { color: #333; }
 .timeline-list li { color: #333; }
 .lang-name { color: #222; } .lang-level { color: #555; } .section-pill-text { background: #e8edf2; color: #111; }
+.section-pill-icon { color: #000; }
 @media (max-width: 800px) {
   .cv-page {
     flex-direction: column;
