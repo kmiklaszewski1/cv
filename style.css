@@ -61,6 +61,7 @@ body {
 #lang-section::before {
   bottom: 0;
 }
+#kontakt-section::before { display: none; }
 .left-section-title {
   display: flex;
   align-items: center;
