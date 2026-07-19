@@ -418,6 +418,7 @@ body {
   padding-top: 18px;
 }
 .lang-badge { margin-left: auto; }
+.lang-level::before { content: "\2013 "; }
 @media (max-width: 800px) {
   .cv-page {
     flex-direction: column;
