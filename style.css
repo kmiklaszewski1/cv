@@ -1,62 +1,78 @@
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: 'Segoe UI', Arial, sans-serif; background: #e8e8e8; color: #222; font-size: 13px; }
-.cv-page { display: flex; flex-direction: row; max-width: 980px; margin: 20px auto; background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.18); min-height: 100vh; }
+.cv-page { display: flex; flex-direction: row; max-width: 1000px; margin: 0 auto; background: #fff; min-height: 100vh; }
 
-/* ===== LEWA KOLUMNA ===== */
-.left-col { width: 240px; min-width: 240px; background: #fff; padding: 24px 16px; display: flex; flex-direction: column; gap: 0; border-right: 1px solid #e0e0e0; }
-.photo-wrap { display: flex; justify-content: center; margin-bottom: 20px; }
-.photo { width: 140px; height: 140px; border-radius: 50%; border: 4px solid #00BCD4; object-fit: cover; }
+/* LEWA KOLUMNA - IDENTYCZNA SZEROKOŚĆ I KOLOR */
+.left-col { width: 300px; min-width: 300px; background: #fff; padding: 40px 20px; display: flex; flex-direction: column; border-right: 1px solid #eee; }
 
-.left-section { margin-bottom: 20px; }
-.left-section-title { background: #f5f5f5; border-radius: 6px; padding: 8px 10px; font-size: 13px; font-weight: 700; color: #222; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
-.left-section-title .icon { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; background: #fff; border-radius: 50%; border: 2px solid #00BCD4; font-size: 14px; color: #00BCD4; }
+/* ZDJĘCIE - DUŻO WIĘKSZE I IDENTYCZNIE ORAMOWANE */
+.photo-wrap { display: flex; justify-content: center; margin-bottom: 30px; }
+.photo-container { width: 220px; height: 220px; border-radius: 50%; overflow: hidden; border: 8px solid #00BCD4; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.photo { width: 100%; height: 100%; object-fit: cover; }
+
+.left-section { margin-bottom: 25px; }
+.left-section-title { font-size: 14px; font-weight: 700; color: #222; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; border-bottom: 2px solid #00BCD4; padding-bottom: 5px; }
+.left-section-title .icon { color: #00BCD4; font-size: 16px; }
 
 .left-list { list-style: none; padding: 0; }
-.left-list li { font-size: 12px; color: #333; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; line-height: 1.4; }
-.icon-small { color: #00BCD4; width: 14px; text-align: center; }
+.left-list li { font-size: 12.5px; color: #444; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+.icon-small { color: #00BCD4; width: 16px; text-align: center; }
 
-/* Zainteresowania w lewej kolumnie */
-.left-interest-text { font-size: 12px; color: #555; line-height: 1.5; padding: 0 10px; }
+/* Dot-list jak u Daniela */
+.dot-list-dan li { position: relative; padding-left: 20px; margin-bottom: 10px; }
+.dot-list-dan li::before { content: ''; position: absolute; left: 0; top: 6px; width: 8px; height: 8px; background: #00BCD4; border-radius: 50%; }
 
-/* Timeline/Dot list tweaks */
-.timeline-list li { border-left: 2px solid #e0e0e0; padding-left: 12px; margin-left: 14px; position: relative; }
-.timeline-list li::before { content: ''; position: absolute; left: -7px; top: 4px; width: 12px; height: 12px; background: #fff; border: 2px solid #00BCD4; border-radius: 50%; }
+/* Timeline jak u Daniela */
+.timeline-list li { position: relative; padding-left: 20px; border-left: 2px solid #e0e0e0; margin-left: 5px; padding-bottom: 10px; }
+.timeline-list li::before { content: ''; position: absolute; left: -5px; top: 5px; width: 10px; height: 10px; background: #fff; border: 2px solid #00BCD4; border-radius: 50%; }
 
-.line-list li { border-left: 2px solid #e0e0e0; padding-left: 12px; margin-left: 14px; position: relative; }
-.line-list li::before { content: ''; position: absolute; left: -5px; top: 6px; width: 8px; height: 8px; background: #00BCD4; border-radius: 50%; }
+.blue { color: #00BCD4; font-weight: 700; }
 
-.blue { color: #00BCD4; font-weight: 600; }
+/* PRAWA KOLUMNA */
+.right-col { flex: 1; padding: 40px 40px; }
 
-/* ===== PRAWA KOLUMNA ===== */
-.right-col { flex: 1; padding: 28px 30px; min-width: 0; }
-.name-header { margin-bottom: 18px; }
-.name-header h1 { font-size: 38px; color: #333; margin-bottom: 4px; }
-.name-first { font-weight: 800; color: #00BCD4; }
-.job-title { font-size: 16px; color: #666; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #00BCD4; display: inline-block; padding-bottom: 4px; margin-bottom: 15px; }
+/* Nagłówek imienia - identyczny jak u Daniela */
+.name-header-dan { margin-bottom: 20px; border-bottom: 4px solid #00BCD4; padding-bottom: 10px; }
+.name-header-dan h1 { font-size: 48px; color: #333; line-height: 1; }
+.name-first-dan { font-weight: 800; color: #00BCD4; }
+.job-title-dan { font-size: 18px; color: #666; font-weight: 600; margin-top: 5px; text-transform: uppercase; letter-spacing: 2px; }
 
-.intro-row { display: flex; gap: 20px; align-items: flex-start; margin-bottom: 25px; }
-.intro-text { flex: 1; font-size: 13px; color: #444; line-height: 1.6; }
+/* Summary z QR jak u Daniela */
+.summary-dan { font-size: 14px; color: #444; line-height: 1.6; margin-bottom: 30px; position: relative; padding-right: 120px; }
+.qr-block-dan { position: absolute; right: 0; top: 0; text-align: center; }
+.qr-img-dan { width: 90px; height: 90px; border: 1px solid #eee; padding: 5px; }
+.qr-label-dan { background: #00BCD4; color: #fff; font-size: 10px; font-weight: 700; padding: 3px; border-radius: 2px; margin-top: 5px; }
 
-.qr-block { flex-shrink: 0; text-align: center; }
-.qr-img { width: 85px; height: 85px; border: 1px solid #ddd; padding: 4px; }
-.qr-label { background: #00BCD4; color: #fff; font-size: 9px; font-weight: 700; padding: 4px; border-radius: 3px; margin-top: 5px; }
+.section-dan { margin-bottom: 30px; }
+.section-title-dan { font-size: 18px; font-weight: 800; color: #222; margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+.section-icon-dan { width: 36px; height: 36px; background: #00BCD4; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; }
 
-.section-title { font-size: 16px; font-weight: 700; color: #222; margin-bottom: 15px; display: flex; align-items: center; gap: 12px; background: #f9f9f9; padding: 8px 12px; border-radius: 6px; }
-.section-icon { width: 34px; height: 34px; background: #00BCD4; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; }
+/* Doświadczenie zawodowe - styl Daniela */
+.job-dan { margin-bottom: 20px; padding-left: 20px; border-left: 4px solid #00BCD4; position: relative; }
+.job-dan::before { content: ''; position: absolute; left: -10px; top: 0; width: 16px; height: 16px; background: #00BCD4; border-radius: 50%; }
+.job-header-dan { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 5px; }
+.job-name-dan { font-size: 16px; font-weight: 800; color: #222; }
+.job-date-dan { color: #00BCD4; font-size: 12px; font-weight: 700; }
+.date-len-dan { color: #999; font-weight: 400; margin-left: 5px; }
+.job-company-dan { color: #666; font-style: italic; font-size: 13px; margin-bottom: 8px; }
+.job-desc-dan { font-size: 13.5px; line-height: 1.5; color: #444; }
 
-.job { margin-bottom: 15px; padding-left: 15px; border-left: 3px solid #00BCD4; }
-.job-header { display: flex; justify-content: space-between; font-weight: 700; font-size: 13.5px; }
-.job-date { color: #00BCD4; font-size: 11px; }
-.date-len { color: #999; font-weight: 400; margin-left: 5px; }
-.job-company { font-style: italic; color: #777; font-size: 12px; margin-bottom: 5px; }
-.job-desc { font-size: 12.5px; line-height: 1.5; color: #444; }
+/* Umiejętności i Kursy obok siebie */
+.bottom-row-dan { display: flex; gap: 30px; margin-bottom: 30px; }
+.bottom-left-dan, .bottom-right-dan { flex: 1; }
 
-.bottom-row { display: flex; gap: 20px; margin-top: 20px; }
-.bottom-left, .bottom-right { flex: 1; }
+.skill-list-dan, .cert-list-dan { list-style: none; }
+.skill-list-dan li, .cert-list-dan li { font-size: 13.5px; margin-bottom: 12px; padding-left: 20px; position: relative; }
+.skill-list-dan li::before, .cert-list-dan li::before { content: ''; position: absolute; left: 0; top: 6px; width: 10px; height: 10px; background: #00BCD4; border-radius: 50%; }
 
-.skill-list, .cert-list { list-style: none; }
-.skill-list li, .cert-list li { font-size: 12.5px; margin-bottom: 8px; padding-left: 15px; position: relative; }
-.skill-list li::before, .cert-list li::before { content: '•'; color: #00BCD4; position: absolute; left: 0; font-weight: bold; }
+/* Zainteresowania na dole prawej kolumny */
+.interest-text-dan { font-size: 14px; color: #444; line-height: 1.6; }
 
-.skill-name { font-weight: 600; }
-.rodo { font-size: 10px; color: #999; margin-top: 30px; border-top: 1px solid #eee; padding-top: 15px; font-style: italic; }
+.rodo-dan { font-size: 10px; color: #aaa; font-style: italic; margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px; }
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .cv-page { flex-direction: column; }
+    .left-col { width: 100%; border-right: none; border-bottom: 1px solid #eee; }
+    .bottom-row-dan { flex-direction: column; }
+}
