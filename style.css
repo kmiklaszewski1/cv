@@ -38,26 +38,28 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #e8e8e8; color: #
 .section-pill-text {
   background: #3d5166;
   color: #fff;
-  font-size: 13px;
-  font-weight: 700;
-  padding: 7px 16px 7px 20px;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 8px 18px 8px 22px;
   border-radius: 0 20px 20px 0;
   margin-left: -8px;
   flex: 1;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
+  line-height: 1;
 }
 
 /* PILL PASEK - prawa kolumna (jasny szary) */
 .section-pill-text-right {
   background: #e8edf2;
-  color: #333;
-  font-size: 14px;
-  font-weight: 700;
-  padding: 7px 16px 7px 20px;
+  color: #222;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 8px 18px 8px 22px;
   border-radius: 0 20px 20px 0;
   margin-left: -8px;
   flex: 1;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
+  line-height: 1;
 }
 
 .left-list { list-style: none; padding: 0 0 0 8px; }
@@ -99,7 +101,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #e8e8e8; color: #
 
 /* Sekcje prawa kolumna */
 .section-dan { margin-bottom: 28px; }
-.section-title-dan { font-size: 17px; font-weight: 800; color: #222; margin-bottom: 18px; display: flex; align-items: center; }
+.section-title-dan { margin-bottom: 18px; display: flex; align-items: center; }
 
 /* Doswiadczenie */
 .job-dan { margin-bottom: 18px; padding-left: 18px; border-left: 4px solid #00BCD4; position: relative; }
