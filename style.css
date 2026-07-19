@@ -110,6 +110,7 @@ body {
   text-align: center;
   flex-shrink: 0;
 }
+/* DOT LIST - Mocne strony */
 .dot-list-dan {
   list-style: none;
   padding: 0;
@@ -146,6 +147,7 @@ body {
   border-radius: 50%;
   z-index: 2;
 }
+/* TIMELINE LIST - Edukacja: identyczne kulki jak Mocne strony */
 .timeline-list {
   list-style: none;
   padding: 0;
@@ -172,12 +174,12 @@ body {
 .timeline-list li::before {
   content: '';
   position: absolute;
-  left: 12px;
-  top: 4px;
-  width: 14px;
-  height: 14px;
-  background: #2d3a4a;
-  border: 2px solid #00BCD4;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: #8fafc5;
   border-radius: 50%;
   z-index: 2;
 }
@@ -185,6 +187,7 @@ body {
   color: #00BCD4;
   font-weight: 700;
 }
+/* LANG LIST - Jezyki */
 .lang-list {
   position: relative;
   padding: 0;
@@ -239,6 +242,7 @@ body {
   border-radius: 3px;
   margin-left: 5px;
 }
+/* PRAWA KOLUMNA */
 .right-col {
   flex: 1;
   padding: 40px 40px;
@@ -303,6 +307,7 @@ body {
   display: flex;
   align-items: center;
 }
+/* DOSWIADCZENIE - linia i kulki wypelnione, na linii */
 .jobs-container {
   position: relative;
   padding-left: 30px;
@@ -310,7 +315,7 @@ body {
 .jobs-container::before {
   content: '';
   position: absolute;
-  left: 19px;
+  left: 7px;
   top: 0;
   bottom: 0;
   width: 2px;
@@ -324,12 +329,11 @@ body {
 .job-dan::before {
   content: '';
   position: absolute;
-  left: -8px;
-  top: 5px;
-  width: 16px;
-  height: 16px;
-  background: #fff;
-  border: 3px solid #7a8fa3;
+  left: -16px;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  background: #7a8fa3;
   border-radius: 50%;
   z-index: 2;
 }
