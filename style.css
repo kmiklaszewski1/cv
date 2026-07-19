@@ -2,7 +2,7 @@
 body { font-family: 'Segoe UI', Arial, sans-serif; background: #e8e8e8; color: #222; font-size: 13px; }
 .cv-page { display: flex; flex-direction: row; max-width: 1000px; margin: 0 auto; background: #fff; min-height: 100vh; }
 
-/* LEWA KOLUMNA - CIEMNE TLO */
+/* LEWA KOLUMNA */
 .left-col { width: 300px; min-width: 300px; background: #2d3a4a; padding: 40px 20px; display: flex; flex-direction: column; }
 
 /* ZDJECIE */
@@ -12,73 +12,31 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #e8e8e8; color: #
 
 /* SEKCJA LEWA */
 .left-section { margin-bottom: 22px; }
+.left-section-title { display: flex; align-items: center; margin-bottom: 14px; }
 
-.left-section-title {
-  display: flex;
-  align-items: center;
-  margin-bottom: 14px;
-}
+/* PILL IKONA */
+.section-pill-icon { width: 40px; height: 40px; border-radius: 50%; background: #00BCD4; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0; z-index: 1; }
 
-/* PILL IKONA - wspolna dla lewej i prawej */
-.section-pill-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #00BCD4;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 17px;
-  flex-shrink: 0;
-  z-index: 1;
-}
+/* PILL PASEK - lewa kolumna */
+.section-pill-text { background: #3d5166; color: #fff; font-size: 18px; font-weight: 800; padding: 9px 18px 9px 22px; border-radius: 0 20px 20px 0; margin-left: -8px; flex: 1; letter-spacing: 0.2px; line-height: 1.1; }
 
-/* PILL PASEK - lewa kolumna (ciemny) */
-.section-pill-text {
-  background: #3d5166;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 800;
-  padding: 9px 18px 9px 22px;
-  border-radius: 0 20px 20px 0;
-  margin-left: -8px;
-  flex: 1;
-  letter-spacing: 0.2px;
-  line-height: 1.1;
-}
-
-/* PILL PASEK - prawa kolumna (jasny szary) - DUZA CZCIONKA jak u Daniela */
-.section-pill-text-right {
-  background: #e8edf2;
-  color: #111;
-  font-size: 22px;
-  font-weight: 800;
-  padding: 9px 18px 9px 22px;
-  border-radius: 0 20px 20px 0;
-  margin-left: -8px;
-  flex: 1;
-  letter-spacing: 0.1px;
-  line-height: 1.1;
-}
+/* PILL PASEK - prawa kolumna */
+.section-pill-text-right { background: #e8edf2; color: #111; font-size: 22px; font-weight: 800; padding: 9px 18px 9px 22px; border-radius: 0 20px 20px 0; margin-left: -8px; flex: 1; letter-spacing: 0.1px; line-height: 1.1; }
 
 .left-list { list-style: none; padding: 0 0 0 8px; }
 .left-list li { font-size: 12.5px; color: #cdd6e0; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
 .icon-small { color: #00BCD4; width: 14px; text-align: center; flex-shrink: 0; }
 
-/* Dot-list */
 .dot-list-dan { padding: 0 0 0 8px; list-style: none; }
 .dot-list-dan li { position: relative; padding-left: 16px; margin-bottom: 9px; color: #cdd6e0; font-size: 12.5px; }
 .dot-list-dan li::before { content: ''; position: absolute; left: 0; top: 5px; width: 7px; height: 7px; background: #00BCD4; border-radius: 50%; }
 
-/* Timeline edukacja */
 .timeline-list { padding: 0 0 0 8px; list-style: none; }
 .timeline-list li { position: relative; padding-left: 16px; border-left: 2px solid #4a5f75; margin-left: 5px; padding-bottom: 8px; color: #cdd6e0; font-size: 12.5px; }
 .timeline-list li::before { content: ''; position: absolute; left: -5px; top: 4px; width: 8px; height: 8px; background: #2d3a4a; border: 2px solid #00BCD4; border-radius: 50%; }
 
 .blue { color: #00BCD4; font-weight: 700; }
 
-/* Jezyki */
 .lang-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 9px; padding-left: 8px; }
 .lang-name { color: #fff; font-weight: 700; font-size: 13px; }
 .lang-level { color: #aaa; font-size: 11px; }
@@ -87,33 +45,32 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #e8e8e8; color: #
 /* PRAWA KOLUMNA */
 .right-col { flex: 1; padding: 40px 40px; }
 
-/* Naglowek imienia */
 .name-header-dan { margin-bottom: 20px; border-bottom: 4px solid #00BCD4; padding-bottom: 10px; }
 .name-header-dan h1 { font-size: 48px; color: #333; line-height: 1; }
 .name-first-dan { font-weight: 800; color: #00BCD4; }
 .job-title-dan { font-size: 15px; color: #666; font-weight: 600; margin-top: 5px; text-transform: uppercase; letter-spacing: 2px; }
 
-/* Summary z QR */
 .summary-dan { font-size: 13.5px; color: #444; line-height: 1.6; margin-bottom: 30px; position: relative; padding-right: 120px; }
 .qr-block-dan { position: absolute; right: 0; top: 0; text-align: center; }
 .qr-img-dan { width: 85px; height: 85px; border: 1px solid #eee; padding: 4px; }
 .qr-label-dan { background: #00BCD4; color: #fff; font-size: 9px; font-weight: 700; padding: 3px; border-radius: 2px; margin-top: 4px; display: block; }
 
-/* Sekcje prawa kolumna */
 .section-dan { margin-bottom: 28px; }
 .section-title-dan { margin-bottom: 18px; display: flex; align-items: center; }
 
-/* Doswiadczenie */
+/* DOSWIADCZENIE */
 .job-dan { margin-bottom: 18px; padding-left: 18px; border-left: 4px solid #00BCD4; position: relative; }
 .job-dan::before { content: ''; position: absolute; left: -9px; top: 0; width: 14px; height: 14px; background: #00BCD4; border-radius: 50%; }
 .job-header-dan { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 4px; }
-.job-name-dan { font-size: 15px; font-weight: 800; color: #222; }
+
+/* NAZWA STANOWISKA - wyraznie inna od naglowkow sekcji */
+.job-name-dan { font-size: 14px; font-weight: 600; color: #1a3a5c; letter-spacing: 0.3px; }
+
 .job-date-dan { color: #00BCD4; font-size: 11px; font-weight: 700; white-space: nowrap; text-align: right; }
 .date-len-dan { color: #999; font-weight: 400; font-size: 11px; display: block; }
 .job-company-dan { color: #666; font-style: italic; font-size: 12.5px; margin-bottom: 6px; }
 .job-desc-dan { font-size: 13px; line-height: 1.5; color: #444; }
 
-/* Umiejetnosci i Kursy obok siebie */
 .bottom-row-dan { display: flex; gap: 30px; margin-bottom: 28px; }
 .bottom-left-dan, .bottom-right-dan { flex: 1; }
 .skill-list-dan, .cert-list-dan { list-style: none; padding: 0; }
