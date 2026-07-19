@@ -110,7 +110,6 @@ body {
   text-align: center;
   flex-shrink: 0;
 }
-/* DOT LIST - Mocne strony */
 .dot-list-dan {
   list-style: none;
   padding: 0;
@@ -147,7 +146,6 @@ body {
   border-radius: 50%;
   z-index: 2;
 }
-/* TIMELINE LIST - Edukacja: identyczne kulki jak Mocne strony */
 .timeline-list {
   list-style: none;
   padding: 0;
@@ -187,7 +185,6 @@ body {
   color: #00BCD4;
   font-weight: 700;
 }
-/* LANG LIST - Jezyki */
 .lang-list {
   position: relative;
   padding: 0;
@@ -242,7 +239,6 @@ body {
   border-radius: 3px;
   margin-left: 5px;
 }
-/* PRAWA KOLUMNA */
 .right-col {
   flex: 1;
   padding: 40px 40px;
@@ -307,7 +303,6 @@ body {
   display: flex;
   align-items: center;
 }
-/* DOSWIADCZENIE - linia i kulki wypelnione, na linii */
 .jobs-container {
   position: relative;
   padding-left: 30px;
@@ -315,7 +310,7 @@ body {
 .jobs-container::before {
   content: '';
   position: absolute;
-  left: 7px;
+  left: 19px;
   top: 0;
   bottom: 0;
   width: 2px;
