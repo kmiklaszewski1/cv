@@ -30,25 +30,25 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #e8e8e8; color: #
 .left-list li { font-size: 12.5px; color: #cdd6e0; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
 .icon-small { color: #00BCD4; width: 14px; text-align: center; flex-shrink: 0; }
 
-/* MOCNE STRONY - ciagla linia z lewej, kulki wyrownane */
+/* MOCNE STRONY - kulka 8px, linia przechodzi przez jej srodek */
 .dot-list-dan { padding: 0 0 0 8px; list-style: none; position: relative; }
-.dot-list-dan::before { content: ''; position: absolute; left: 11px; top: 0; bottom: 0; width: 2px; background: #4a5f75; }
-.dot-list-dan li { position: relative; padding-left: 20px; margin-bottom: 11px; color: #cdd6e0; font-size: 12.5px; line-height: 1.5; }
-.dot-list-dan li::before { content: ''; position: absolute; left: 4px; top: 50%; transform: translateY(-50%); width: 8px; height: 8px; background: #7a8fa3; border-radius: 50%; z-index: 1; }
+.dot-list-dan::before { content: ''; position: absolute; left: 14px; top: 0; bottom: 0; width: 2px; background: #4a5f75; }
+.dot-list-dan li { position: relative; padding-left: 22px; margin-bottom: 11px; color: #cdd6e0; font-size: 12.5px; line-height: 1.5; }
+.dot-list-dan li::before { content: ''; position: absolute; left: 7px; top: 50%; transform: translateY(-50%); width: 8px; height: 8px; background: #7a8fa3; border-radius: 50%; z-index: 1; }
 
-/* TIMELINE EDUKACJA - ciagla linia, wyrownana */
+/* TIMELINE EDUKACJA - kulka 12px, linia przez srodek */
 .timeline-list { padding: 0 0 0 8px; list-style: none; position: relative; }
-.timeline-list::before { content: ''; position: absolute; left: 11px; top: 0; bottom: 0; width: 2px; background: #4a5f75; }
-.timeline-list li { position: relative; padding-left: 20px; padding-bottom: 8px; color: #cdd6e0; font-size: 12.5px; }
-.timeline-list li::before { content: ''; position: absolute; left: 4px; top: 4px; width: 12px; height: 12px; background: #2d3a4a; border: 2px solid #00BCD4; border-radius: 50%; z-index: 1; }
+.timeline-list::before { content: ''; position: absolute; left: 14px; top: 0; bottom: 0; width: 2px; background: #4a5f75; }
+.timeline-list li { position: relative; padding-left: 22px; padding-bottom: 8px; color: #cdd6e0; font-size: 12.5px; }
+.timeline-list li::before { content: ''; position: absolute; left: 7px; top: 4px; width: 12px; height: 12px; background: #2d3a4a; border: 2px solid #00BCD4; border-radius: 50%; z-index: 1; }
 
 .blue { color: #00BCD4; font-weight: 700; }
 
-/* JEZYKI - ciagla linia z lewej */
+/* JEZYKI - kulka 8px, linia przez srodek */
 .lang-list { position: relative; padding-left: 8px; }
-.lang-list::before { content: ''; position: absolute; left: 11px; top: 0; bottom: 0; width: 2px; background: #4a5f75; }
-.lang-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 9px; padding-left: 20px; position: relative; }
-.lang-row::before { content: ''; position: absolute; left: 4px; top: 50%; transform: translateY(-50%); width: 8px; height: 8px; background: #7a8fa3; border-radius: 50%; z-index: 1; }
+.lang-list::before { content: ''; position: absolute; left: 14px; top: 0; bottom: 0; width: 2px; background: #4a5f75; }
+.lang-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 9px; padding-left: 22px; position: relative; }
+.lang-row::before { content: ''; position: absolute; left: 7px; top: 50%; transform: translateY(-50%); width: 8px; height: 8px; background: #7a8fa3; border-radius: 50%; z-index: 1; }
 .lang-name { color: #fff; font-weight: 700; font-size: 13px; }
 .lang-level { color: #aaa; font-size: 11px; }
 .lang-badge { background: #00BCD4; color: #fff; font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 3px; margin-left: 5px; }
@@ -68,11 +68,11 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #e8e8e8; color: #
 .section-dan { margin-bottom: 28px; }
 .section-title-dan { margin-bottom: 18px; display: flex; align-items: center; }
 
-/* DOSWIADCZENIE - ciagla linia przez caly blok, szare kulki */
-.jobs-container { position: relative; padding-left: 20px; margin-left: 0; }
+/* DOSWIADCZENIE - kulka 16px, linia przez srodek */
+.jobs-container { position: relative; padding-left: 28px; }
 .jobs-container::before { content: ''; position: absolute; left: 7px; top: 0; bottom: 0; width: 2px; background: #c5cdd6; }
-.job-dan { margin-bottom: 18px; padding-left: 22px; position: relative; }
-.job-dan::before { content: ''; position: absolute; left: -8px; top: 6px; width: 16px; height: 16px; background: #fff; border: 3px solid #7a8fa3; border-radius: 50%; z-index: 1; }
+.job-dan { margin-bottom: 18px; padding-left: 18px; position: relative; }
+.job-dan::before { content: ''; position: absolute; left: -9px; top: 6px; width: 16px; height: 16px; background: #fff; border: 3px solid #7a8fa3; border-radius: 50%; z-index: 1; }
 
 .job-header-dan { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1px; }
 .job-name-dan { font-size: 16px; font-weight: 700; color: #222; }
@@ -81,7 +81,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #e8e8e8; color: #
 .job-company-dan { color: #666; font-style: italic; font-size: 12.5px; margin-bottom: 6px; }
 .job-desc-dan { font-size: 13px; line-height: 1.5; color: #444; }
 
-/* UMIEJETNOSCI I KURSY - ciagla linia z lewej */
+/* UMIEJETNOSCI I KURSY - kulka 10px, linia przez srodek */
 .bottom-row-dan { display: flex; gap: 30px; margin-bottom: 28px; }
 .bottom-left-dan, .bottom-right-dan { flex: 1; }
 .skill-list-dan, .cert-list-dan { list-style: none; padding: 0; position: relative; }
