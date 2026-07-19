@@ -302,7 +302,7 @@ body {
 }
 .jobs-container {
   position: relative;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 .jobs-container::before {
   content: '';
@@ -315,13 +315,13 @@ body {
 }
 .job-dan {
   margin-bottom: 18px;
-  padding-left: 18px;
+  padding-left: 16px;
   position: relative;
 }
 .job-dan::before {
   content: '';
   position: absolute;
-  left: 4px;
+  left: -16px;
   top: 8px;
   width: 10px;
   height: 10px;
