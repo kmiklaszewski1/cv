@@ -148,7 +148,7 @@ body {
 .dot-list-dan li::before {
   content: '';
   position: absolute;
-  left: 16px;
+  left: 15px;
   top: 50%;
   transform: translateY(-50%);
   width: 10px;
@@ -176,7 +176,7 @@ body {
 .timeline-list li::before {
   content: '';
   position: absolute;
-  left: 16px;
+  left: 15px;
   top: 50%;
   transform: translateY(-50%);
   width: 10px;
@@ -209,7 +209,7 @@ body {
 .lang-row::before {
   content: '';
   position: absolute;
-  left: 16px;
+  left: 15px;
   top: 50%;
   transform: translateY(-50%);
   width: 10px;
@@ -315,7 +315,7 @@ body {
 }
 .job-dan {
   margin-bottom: 18px;
-  padding-left: 16px;
+  padding-left: 15px;
   position: relative;
 }
 .job-dan::before {
