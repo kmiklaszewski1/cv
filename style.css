@@ -377,7 +377,7 @@ body {
 .skill-list-dan::before, .cert-list-dan::before {
   content: '';
   position: absolute;
-  left: 14px;
+  left: 15px;
   top: 0;
   bottom: 0;
   width: 2px;
@@ -392,7 +392,7 @@ body {
 .skill-list-dan li::before, .cert-list-dan li::before {
   content: '';
   position: absolute;
-  left: 9px;
+  left: 15px;
   top: 50%;
   transform: translateY(-50%);
   width: 10px;
