@@ -377,7 +377,7 @@ body {
 .skill-list-dan::before, .cert-list-dan::before {
   content: '';
   position: absolute;
-  left: 4px;
+  left: 14px;
   top: 0;
   bottom: 0;
   width: 2px;
@@ -386,13 +386,13 @@ body {
 .skill-list-dan li, .cert-list-dan li {
   font-size: 13px;
   margin-bottom: 10px;
-  padding-left: 20px;
+  padding-left: 30px;
   position: relative;
 }
 .skill-list-dan li::before, .cert-list-dan li::before {
   content: '';
   position: absolute;
-  left: -1px;
+  left: 9px;
   top: 50%;
   transform: translateY(-50%);
   width: 10px;
@@ -429,8 +429,6 @@ body {
 .skill-list-dan li strong.blue { font-weight: normal; font-style: italic; }
 .jobs-container::before { left: 20px; }
 .job-dan::before { left: -11px; }
-.skill-list-dan::before, .cert-list-dan::before { left: 20px; }
-.skill-list-dan li::before, .cert-list-dan li::before { left: 15px; }
 @media (max-width: 800px) {
   .cv-page {
     flex-direction: column;
