@@ -440,3 +440,4 @@ body {
     flex-direction: column;
   }
 }
+.skill-list-dan li::before, .cert-list-dan li::before { background: #9aa0a6; left: 11px; }
