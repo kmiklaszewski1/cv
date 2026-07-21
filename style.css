@@ -55,7 +55,7 @@ body {
   top: 0;
   bottom: -22px;
   width: 2px;
-  background: #5b8aa8;
+    background: #d3d3d3;
   z-index: 0;
 }
 #lang-section::before {
